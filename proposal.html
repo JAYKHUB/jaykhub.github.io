@@ -18,8 +18,14 @@
     h1 {
       font-size: 2.5rem;
       color: #fff;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     }
     .buttons {
       display: flex;
@@ -76,6 +82,7 @@
 </head>
 <body>
   <h1>Will you be my girlfriend? ❤️</h1>
+  <h2>You’re beautiful every single day, and being with you makes me so happy ✨</h2>
   <div class="buttons">
     <button class="yes" onclick="sayYes()">Yes ❤️</button>
     <button class="no" onclick="sayNo()">No 🙃</button>
@@ -87,7 +94,7 @@
     function sayYes() {
       document.querySelector('.buttons').style.display = 'none';
       const response = document.getElementById('response');
-      response.textContent = "Yay! That's great xoxo 🥰 and try not to scream";
+      response.textContent = "Yay! You just made me the happiest person alive 🥰 I’ll always be here for you, and I promise to make every moment with you special 💕";
       response.classList.remove('hidden');
       launchConfetti();
     }
@@ -118,4 +125,3 @@
   </script>
 </body>
 </html>
-
